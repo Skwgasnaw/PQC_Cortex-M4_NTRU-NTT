@@ -1,5 +1,5 @@
 # PQC_Cortex-M4_NTRU-NTT
-For testing Efficient, Verifiable and Large enough $q$ for $\mathbb{Z}_{q}$ NTRU / NTT Multiplication in Academia Sinica IIS.
+For testing Efficient, Verifiable and Large enough $q$ over $\mathbb{Z}_{q}$ NTRU / NTT Multiplication in Academia Sinica IIS.
 
 1. For [Pqc_ntruhps2048677_primeANDroot](https://github.com/Skwgasnaw/PQC_Cortex-M4_NTRU-NTT/tree/main/Pqc_ntruhps2048677_primeANDroot), we use [Decode.fr/Prime-Numbers-Search](https://www.dcode.fr/prime-numbers-search) to find 1000 Closest Primes to $q'$ ( $q > 2 * (\pm\frac{q}{2})^2 * n = 2 * (\frac{2048}{2})^2 * 677$ ) and put in **Prime_list** because of the Specification of ntruhps2048677 (Details see in [Multi-Parameter Support with NTTs for NTRU...](https://troll.iis.sinica.edu.tw/by-publ/recent/ntt_ntru_ntrup.pdf)).
 
