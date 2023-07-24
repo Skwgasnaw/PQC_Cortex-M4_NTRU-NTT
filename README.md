@@ -5,6 +5,9 @@ For testing Efficient, Verifiable and Large enough $\large q$ over $\mathbb{Z}_{
 > The prime $\large q'$ must be $\large q_{i}' = 1536k + 1$
 2. We tested and used the **Prime_list** to find three Roots $\large{x = yz;\ (y^3)\ mod\ q' =(z^{512})\ mod\ q'=1}$ over $\large \mathbb{Z}_{2048}$ for NTT. 
 > ![image](https://github.com/Skwgasnaw/PQC_Cortex-M4_NTRU-NTT/assets/67849251/f6c7c821-eca7-45b3-8d91-358062e15a44)
+3.
+> ![image](https://github.com/Skwgasnaw/PQC_Cortex-M4_NTRU-NTT/assets/67849251/3ad8f269-94e1-41b4-80da-93ebad533da9)
+> ![image](https://github.com/Skwgasnaw/PQC_Cortex-M4_NTRU-NTT/assets/67849251/996e18ff-df30-4d42-bf81-271d301afd83)
 
 
 
