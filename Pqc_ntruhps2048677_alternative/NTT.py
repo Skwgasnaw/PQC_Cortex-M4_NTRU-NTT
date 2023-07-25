@@ -100,15 +100,28 @@ def good_thomas_permutation(poly1, poly2):
     #(len(pad_a));
     reorder_poly1 = [[0]*512 for _ in range(3)];
     reorder_poly2 = [[0]*512 for _ in range(3)];
+    '''
     for i in range (0, 1536):
-        x = i % 3; y = i % 512;
-        reorder_poly1[x][y] = pad_poly1[i];
-        reorder_poly2[x][y] = pad_poly2[i];
+        #x = i % 3; y = i % 512;
+        #reorder_poly1[x][y] = pad_poly1[i];
+        #reorder_poly2[x][y] = pad_poly2[i];
+    '''
+    for i in range (0, 3):
+        for j in range (0, 512):
+            idx = (i * 512 + j * 3) % 1536;
+            reorder_poly1[i][j] = pad_poly1[idx];
+            reorder_poly2[i][j] = pad_poly2[idx];
+
     return reorder_poly1, reorder_poly2;
 
 def inv_good_thomas_permutation(poly):
 
     reorder_poly = [0] * 1536;
+    '''
+    for i in range(0, 3):
+        for j in range(0, 512):
+            idx = (1024 * i + 513 * j) % 1536;
+            reorder_poly[idx] = poly[i][j];
     '''
     idx = 0;
     for i in range (0,512):
@@ -122,11 +135,6 @@ def inv_good_thomas_permutation(poly):
     for i in range (0,512):
         reorder_poly[idx] = poly[2][i];
         idx = (idx + 3) % 1536;
-    '''
-    for i in range(0, 3):
-        for j in range(0, 512):
-            idx = (1024 * i + 513 * j) % 1536;
-            reorder_poly[idx] = poly[i][j];
 
     return reorder_poly;
 
@@ -239,8 +247,10 @@ error = 0;
 for i in range (0,N):
     if(schoolbook_result[i] != ntt_result[i]):
         error += 1;
-print(error);
-print("finish");
+if(error == 0):
+    print("NTT success");
+else:
+    print(error);
 
 '''
 #ntt test
@@ -273,3 +283,4 @@ if(test_error == 0):
 else:
     print("NTT ERROR, ERROR COUNT :",test_error);
 '''
+
