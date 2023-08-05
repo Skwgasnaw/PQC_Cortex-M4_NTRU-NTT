@@ -7,7 +7,4 @@ For testing Efficient, Verifiable and Large enough $\large q$ over $\mathbb{Z}_{
 > ![image](https://github.com/Skwgasnaw/PQC_Cortex-M4_NTRU-NTT/assets/67849251/f6c7c821-eca7-45b3-8d91-358062e15a44)
 3.
 > ![image](https://github.com/Skwgasnaw/PQC_Cortex-M4_NTRU-NTT/assets/67849251/3ad8f269-94e1-41b4-80da-93ebad533da9)
-> ![image](https://github.com/Skwgasnaw/PQC_Cortex-M4_NTRU-NTT/assets/67849251/996e18ff-df30-4d42-bf81-271d301afd83)
-
-
-
+> ![image](https://github.com/Skwgasnaw/PQC_Cortex-M4_NTRU-NTT/assets/67849251/9df7a4e4-8042-496b-98a4-0076c8efabbb)
